@@ -11,6 +11,15 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- email js link-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("user_IA2XdkOUTAvUydapRHYeI");
+   })();
+   </script>
 
 </head>
 <body>
@@ -330,18 +339,18 @@
 
         <div class="contact-form-container">
 
-            <form action="">
+            <form id="form">
 
                 <h3>get in touch</h3>
 
                     <div class="inputBox">
-                        <input type="text" placeholder="full name">
-                        <input type="email" placeholder="e-mail">
+                        <input type="text" name="from_name" id="from_name" placeholder="Full Name" required>
+                        <input type="email" name="from_email" id="from_email" placeholder="e-mail" required>
                     </div>
 
-                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <textarea cols="30" rows="10" name="message" id="message" placeholder="message" required></textarea>
 
-                    <input type="submit" value="message">
+                    <input type="submit" id="button" value="Message">
 
             </form>
         </div>
@@ -388,5 +397,6 @@
 <!-- Google map API link-->
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly" async></script>
+
 </body>
 </html>

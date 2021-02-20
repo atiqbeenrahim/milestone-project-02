@@ -33,6 +33,30 @@ $(document).ready(function(){
 
 });
 
+//Email section added//
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'royaltouristz';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+
 //Google Map Clustar marker//
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
