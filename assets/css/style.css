@@ -531,6 +531,12 @@ video{
   background:#f64c72;
 }
 
+#map {
+  height: 200px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
 /* Newsletter section */
 
 .newsletter{

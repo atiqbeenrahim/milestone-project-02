@@ -19,7 +19,7 @@
 
 <header>
 
-<a href="home" class="logo">travel Planet <span><i class="fas fa-plane-departure"></i></span></a>
+<a data-scroll="home" href="#home" class="logo">travel Planet <span><i class="fas fa-plane-departure"></i></span></a>
 
 <nav class="navbar">
     <ul>
@@ -151,7 +151,7 @@
             <h3>why us?</h3>
             <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to enjoy the moments while managing foods and transport for you.</p><br>
             <p>We also arrange proper tour plan to make your life relaxing and adventurous.</p>
-            <a href="#"><button class="btn">get started</button></a>
+            <a data-scroll="contact" href="#contact"><button class="btn">get started</button></a>
         </div>
 
     </div>
@@ -240,8 +240,8 @@
                 <img src="./assets/images/pic1.png" alt="">
             </div>
             <div class="content">
-                <h3>someone's name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <h3>Alen</h3>
+                <p>I love their service and very professional at their job.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -257,8 +257,8 @@
                 <img src="./assets/images/pic2.png" alt="">
             </div>
             <div class="content">
-                <h3>someone's name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <h3>Arya</h3>
+                <p>Best in the country for me. They made my life easy by giving all the necessary information and arrange every thing exactly how i want it. They care for their customers.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -274,8 +274,8 @@
                 <img src="./assets/images/pic3.png" alt="">
             </div>
             <div class="content">
-                <h3>someone's name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ex labore odio fuga doloremque sequi in asperiores ea, nisi ullam?</p>
+                <h3>Sany</h3>
+                <p>I am very touched with their approach and how they handle everything related to your journey it's very professional.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -294,54 +294,59 @@
 
 <section id="contact" class="contact">
 
-<h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
+    <h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.960043043403!2d72.85186461442511!3d19.109408755888396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8348740e791%3A0xe302e2dd9ab8bae2!2sTravels%20Booking%20Office!5e0!3m2!1sen!2sin!4v1609421049401!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0; outline:none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="row">
 
-<div class="row">
+        <div class="contact-info">
 
-<div class="contact-info">
+            <div class="box">
+                <h3> <i class="fas fa-home"></i> Head Office</h3>
+                <p>Tallaght, <br>
+                Dublin 24, <br>
+                Ireland.</p>
+                <br>
+                <h3> <i class="fas fa-home"></i> Branch Office 1</h3>
+                <p>Temple Bar, <br>
+                Dublin 1, <br>
+                Ireland.</p>
+                <br>
+                <h3> <i class="fas fa-home"></i> Branch Office 2</h3>
+                <p>City Hall, <br>
+                Belfast, <br>
+                Northern Ireland.</p>
+            </div>
 
-    <div class="box">
-        <h3> <i class="fas fa-home"></i> address </h3>
-        <p>Tallaght, <br>
-        Dublin 24, <br>
-        Ireland.</p>
-    </div>
+            <div class="box">
+                <h3> <i class="fas fa-envelope"></i> e-mail </h3>
+                <p>abr.royal@gmail.com</p>
+            </div>
 
-    <div class="box">
-        <h3> <i class="fas fa-envelope"></i> e-mail </h3>
-        <p>abr.royal@gmail.com</p>
-    </div>
-
-    <div class="box">
-        <h3> <i class="fas fa-phone"></i> phone </h3>
-        <p>+353 894559713</p>
-    </div>
-
-</div>
-
-<div class="contact-form-container">
-
-    <form action="">
-
-        <h3>get in touch</h3>
-
-        <div class="inputBox">
-            <input type="text" placeholder="full name">
-            <input type="email" placeholder="e-mail">
+            <div class="box">
+                <h3> <i class="fas fa-phone"></i> phone </h3>
+                <p>+353 00000777</p>
+            </div>
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+        <div class="contact-form-container">
 
-        <input type="submit" value="message">
+            <form action="">
 
-    </form>
+                <h3>get in touch</h3>
 
-</div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="full name">
+                        <input type="email" placeholder="e-mail">
+                    </div>
 
-</div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
 
+                    <input type="submit" value="message">
+
+            </form>
+        </div>
+    </div>
+    <div id="map"></div>
 </section>
 
 <!-- Newsletter section -->
@@ -381,5 +386,8 @@
 <!-- custom js file link  -->
 <script src="./assets/js/main.js"></script>
 
+<!-- Google map API link-->
+<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 </html>
