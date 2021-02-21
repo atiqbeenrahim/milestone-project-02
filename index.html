@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,337 +12,326 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- email js link-->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-   (function(){
-      emailjs.init("user_IA2XdkOUTAvUydapRHYeI");
-   })();
-   </script>
 
 </head>
+
 <body>
 
-<!-- header section starts  -->
+    <!-- header section starts  -->
 
-<header>
+    <header>
 
-<a data-scroll="home" href="#home" class="logo">Royal Touristz <span><i class="fas fa-plane-departure"></i></span></a>
+        <a data-scroll="home" href="#home" class="logo">Royal Touristz <span><i class="fas fa-plane-departure"></i></span></a>
 
-<nav class="navbar">
-    <ul>
-        <li><a data-scroll="home" href="#home" class="active">home</a></li>
-        <li><a data-scroll="feature" href="#feature">feature</a></li>
-        <li><a data-scroll="about" href="#about">about</a></li>
-        <li><a data-scroll="gallery" href="#gallery">gallery</a></li>
-        <li><a data-scroll="review" href="#review">review</a></li>
-        <li><a data-scroll="contact" href="#contact">contact</a></li>
-    </ul>
-</nav>
+        <nav class="navbar">
+            <ul>
+                <li><a data-scroll="home" href="#home" class="active">home</a></li>
+                <li><a data-scroll="feature" href="#feature">feature</a></li>
+                <li><a data-scroll="about" href="#about">about</a></li>
+                <li><a data-scroll="gallery" href="#gallery">gallery</a></li>
+                <li><a data-scroll="review" href="#review">review</a></li>
+                <li><a data-scroll="contact" href="#contact">contact</a></li>
+            </ul>
+        </nav>
 
-<div class="fas fa-bars"></div>
+        <div class="fas fa-bars"></div>
 
-</header>
+    </header>
 
-<!-- home section starts  -->
+    <!-- home section starts  -->
 
-<section class="home" id="home">
+    <section class="home" id="home">
 
-    <video src="./assets/images/travel.mp4" loop muted autoplay></video>
-    <div class="overlay"></div>
-
-    <div class="content">
-        <h2>Never Stop Exploring</h2>
-        <h3>Adventure Awaits</h3>
-        <p>"Of all the books in the world, the best stories are found between the pages of a passport.”</p>
-    </div>
-
-    <div class="form-container">
-        <form action="">
-
-            <h3>search your destination</h3>
-
-            <span>location</span>
-            <input type="text" placeholder="place you want to visit">
-
-            <span>guest members</span>
-            <input type="number" placeholder="number of peoples">
-
-            <span>arrival</span>
-            <input type="date">
-
-            <span>leaving</span>
-            <input type="date">
-
-            <input type="submit" value="search">
-
-        </form>
-    </div>
-
-</section>
-
-<!-- feature section starts  -->
-
-<section class="feature" id="feature">
-    <h1 class="heading">featured locations</h1>
-
-    <div class="card-container">
-
-        <div class="card">
-            <span class="discount">-35%</span>
-            <img src="./assets/images/card-1.jpg" alt="">
-            <div class="content">
-                <h3 class="title">Thailand</h3>
-                <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#"><button class="btn">check out!</button></a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/card-2.jpg" alt="">
-            <div class="content">
-                <h3 class="title">Ireland</h3>
-                <p>Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#"><button class="btn">check out!</button></a>
-            </div>
-        </div>
-
-        <div class="card">
-            <span class="discount">-45%</span>
-            <img src="./assets/images/card-3.jpg" alt="">
-            <div class="content">
-                <h3 class="title">Egypt</h3>
-                <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined Karnak Temple and Valley of the Kings tombs.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#"><button class="btn">check out!</button></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- about section starts  -->
-
-
-<section id="about" class="about">
-    <h1 class="heading">about us</h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="./assets/images/about.png" alt="">
-        </div>
+        <video src="./assets/images/travel.mp4" loop muted autoplay></video>
+        <div class="overlay"></div>
 
         <div class="content">
-            <h3>why us?</h3>
-            <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to enjoy the moments while managing foods and transport for you.</p><br>
-            <p>We also arrange proper tour plan to make your life relaxing and adventurous.</p>
-            <a data-scroll="contact" href="#contact"><button class="btn">get started</button></a>
+            <h2>Never Stop Exploring</h2>
+            <h3>Adventure Awaits</h3>
+            <p>"Of all the books in the world, the best stories are found between the pages of a passport.”</p>
         </div>
 
-    </div>
+        <div class="form-container">
+            <form action="">
 
-</section>
+                <h3>search your destination</h3>
 
+                <span>location</span>
+                <input type="text" placeholder="place you want to visit">
 
-<!-- gallery section starts  -->
+                <span>guest members</span>
+                <input type="number" placeholder="number of peoples">
 
-<section id="gallery" class="gallery">
+                <span>arrival</span>
+                <input type="date">
 
-    <h1 class="heading"><span>g</span>allery</h1>
+                <span>leaving</span>
+                <input type="date">
 
-    <div class="box-container">
+                <input type="submit" value="search">
 
-        <div class="box">
-            <img src="./assets/images/img1.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
+            </form>
         </div>
 
-        <div class="box">
-            <img src="./assets/images/img2.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
-        </div>
+    </section>
 
-        <div class="box">
-            <img src="./assets/images/img3.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
-        </div>
+    <!-- feature section starts  -->
 
-        <div class="box">
-            <img src="./assets/images/img4.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
-        </div>
+    <section class="feature" id="feature">
+        <h1 class="heading">featured locations</h1>
 
-        <div class="box">
-            <img src="./assets/images/img5.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
-        </div>
+        <div class="card-container">
 
-        <div class="box">
-            <img src="./assets/images/img6.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share"></a>
-                <a href="#" class="fas fa-search"></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- review section starts  -->
-
-<section id="review" class="review">
-
-    <h1 class="heading">review</h1>
-
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="./assets/images/pic1.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Alen</h3>
-                <p>I love their service and very professional at their job.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+            <div class="card">
+                <span class="discount">-35%</span>
+                <img src="./assets/images/card-1.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">Thailand</h3>
+                    <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
                 </div>
             </div>
-        </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="./assets/images/pic2.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Arya</h3>
-                <p>Best in the country for me. They made my life easy by giving all the necessary information and arrange every thing exactly how i want it. They care for their customers.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
+            <div class="card">
+                <img src="./assets/images/card-2.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">Ireland</h3>
+                    <p>Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
                 </div>
             </div>
-        </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="./assets/images/pic3.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Sany</h3>
-                <p>I am very touched with their approach and how they handle everything related to your journey it's very professional.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
+            <div class="card">
+                <span class="discount">-45%</span>
+                <img src="./assets/images/card-3.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">Egypt</h3>
+                    <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's
+                        hieroglyph-lined Karnak Temple and Valley of the Kings tombs.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
                 </div>
             </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
 
-<!-- contact section starts  -->
+    <!-- about section starts  -->
 
-<section id="contact" class="contact">
 
-    <h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
+    <section id="about" class="about">
+        <h1 class="heading">about us</h1>
 
-    <div class="row">
+        <div class="row">
 
-        <div class="contact-info">
+            <div class="image">
+                <img src="./assets/images/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>why us?</h3>
+                <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to enjoy the moments while managing foods and transport for you.</p><br>
+                <p>We also arrange proper tour plan to make your life relaxing and adventurous.</p>
+                <a data-scroll="contact" href="#contact"><button class="btn">get started</button></a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- gallery section starts  -->
+
+    <section id="gallery" class="gallery">
+
+        <h1 class="heading"><span>g</span>allery</h1>
+
+        <div class="box-container">
 
             <div class="box">
-                <h3> <i class="fas fa-home"></i> Head Office</h3>
-                <p>Tallaght, <br>
-                Dublin 24, <br>
-                Ireland.</p>
-                <br>
-                <h3> <i class="fas fa-home"></i> Branch Office 1</h3>
-                <p>Temple Bar, <br>
-                Dublin 1, <br>
-                Ireland.</p>
-                <br>
-                <h3> <i class="fas fa-home"></i> Belfast Branch</h3>
-                <p>City Hall, <br>
-                Belfast, <br>
-                Northern Ireland.</p>
+                <img src="./assets/images/img1.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
             </div>
 
             <div class="box">
-                <h3> <i class="fas fa-envelope"></i> e-mail </h3>
-                <p>info.royaltouristz@gmail.com</p>
+                <img src="./assets/images/img2.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
             </div>
 
             <div class="box">
-                <h3> <i class="fas fa-phone"></i> phone </h3>
-                <p>+353 00000000</p>
+                <img src="./assets/images/img3.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
             </div>
+
+            <div class="box">
+                <img src="./assets/images/img4.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/img5.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./assets/images/img6.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-search"></a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="contact-form-container">
+    </section>
 
-            <form id="form">
 
-                <h3>get in touch</h3>
+    <!-- review section starts  -->
+
+    <section id="review" class="review">
+
+        <h1 class="heading">review</h1>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/images/pic1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Alen</h3>
+                    <p>I love their service and very professional at their job.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/images/pic2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Arya</h3>
+                    <p>Best in the country for me. They made my life easy by giving all the necessary information and arrange every thing exactly how i want it. They care for their customers.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./assets/images/pic3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sany</h3>
+                    <p>I am very touched with their approach and how they handle everything related to your journey it's very professional.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section starts  -->
+
+    <section id="contact" class="contact">
+
+        <h1 class="heading"><span>c</span>ontact <span>u</span>s</h1>
+
+        <div class="row">
+
+            <div class="contact-info">
+
+                <div class="box">
+                    <h3> <i class="fas fa-home"></i> Head Office</h3>
+                    <p>Tallaght, <br> Dublin 24, <br> Ireland.
+                    </p>
+                    <br>
+                    <h3> <i class="fas fa-home"></i> Branch Office 1</h3>
+                    <p>Temple Bar, <br> Dublin 1, <br> Ireland.
+                    </p>
+                    <br>
+                    <h3> <i class="fas fa-home"></i> Belfast Branch</h3>
+                    <p>City Hall, <br> Belfast, <br> Northern Ireland.</p>
+                </div>
+
+                <div class="box">
+                    <h3> <i class="fas fa-envelope"></i> e-mail </h3>
+                    <p>info.royaltouristz@gmail.com</p>
+                </div>
+
+                <div class="box">
+                    <h3> <i class="fas fa-phone"></i> phone </h3>
+                    <p>+353 00000000</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+
+                <form id="form">
+
+                    <h3>get in touch</h3>
 
                     <div class="inputBox">
                         <input type="text" name="from_name" id="from_name" placeholder="Full Name" required>
@@ -352,59 +342,68 @@
 
                     <input type="submit" id="button" value="Message">
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <select id="offices" onchange="moveMap()">
-        <option value="">Choose place</option>
-        <option value="headoffice">Head Office</option>
-        <option value="branchoffice">Branch Office</option>
-        <option value="belfastbranch">Belfast Branch</option>
-    </select>
+        <select id="offices" onchange="moveMap()">
+            <option value="">Choose place</option>
+            <option value="headoffice">Head Office</option>
+            <option value="branchoffice">Branch Office</option>
+            <option value="belfastbranch">Belfast Branch</option>
+        </select>
 
-    <div id="map"></div>
-</section>
+        <div id="map"></div>
+    </section>
 
-<!-- Newsletter section -->
+    <!-- Newsletter section -->
 
-<section class="newsletter">
+    <section class="newsletter">
 
-<h1>sign up 30% discount</h1>
+        <h1>sign up 30% discount</h1>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero quo nisi ratione. Ea, corporis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero quo nisi ratione. Ea, corporis.</p>
 
-<form action="">
-    <input type="email" placeholder="enter your email">
-    <input type="submit" value="sign up">
-</form>
+        <form action="">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="sign up">
+        </form>
 
-</section>
+    </section>
 
-<section class="footer">
+    <section class="footer">
 
-<h1 class="credit">Copyright <span>Travel Planet</span> | all rights reserved.</h1>
+        <h1 class="credit">Copyright <span>Travel Planet</span> | all rights reserved.</h1>
 
-<div class="icons">
-    <a href="#" class="fab fa-facebook-f"></a>
-    <a href="#" class="fab fa-twitter"></a>
-    <a href="#" class="fab fa-instagram"></a>
-</div>
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
 
-</section>
-
+    </section>
 
 
-<!-- jquery cdn link  -->
+    <!-- jquery cdn link  -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- custom js file link  -->
-<script src="./assets/js/main.js"></script>
+    <!-- custom js file link  -->
+    <script src="./assets/js/main.js"></script>
 
-<!-- Google map API link-->
-<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- email js link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_IA2XdkOUTAvUydapRHYeI");
+        })();
+    </script>
+
+    <!-- Google map link-->
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly" async></script>
 
 </body>
+
 </html>
