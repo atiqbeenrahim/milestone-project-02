@@ -83,3 +83,33 @@ const locations = [
   { lat: 53.34503530812306, lng: -6.267437318146202 },
   { lat: 54.59766859658021, lng: -5.930882680741953 },
 ];
+
+function moveMap() {
+  switch (document.getElementById("offices").value) {
+     case "headoffice":
+           map = new google.maps.Map(document.getElementById('map'), {
+            zoom:  15,
+            center: {lat: 53.28758963736527,
+                     lng: -6.365464299036272 },
+
+           });
+           break;
+      case "branchoffice":
+          map = new google.maps.Map(document.getElementById('map'), {
+               zoom: 15,
+               center: {lat: 53.34503530812306,
+                        lng: -6.267437318146202},
+
+          });
+          break;
+     case "belfastbranch":
+          map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: {lat: 54.59766859658021,
+                       lng: -5.930882680741953},
+
+           });
+          break;
+      default:
+  }
+}

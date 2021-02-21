@@ -531,6 +531,14 @@ video{
   background:#f64c72;
 }
 
+#offices {
+  color:#f64c72;
+  border:.2rem solid #242582;
+  cursor: pointer;
+  font-size: 1.8rem;
+  width:15rem;
+}
+
 #map {
   height: 200px;
   width: 100%;

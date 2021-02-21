@@ -320,7 +320,7 @@
                 Dublin 1, <br>
                 Ireland.</p>
                 <br>
-                <h3> <i class="fas fa-home"></i> Branch Office 2</h3>
+                <h3> <i class="fas fa-home"></i> Belfast Branch</h3>
                 <p>City Hall, <br>
                 Belfast, <br>
                 Northern Ireland.</p>
@@ -355,6 +355,14 @@
             </form>
         </div>
     </div>
+
+    <select id="offices" onchange="moveMap()">
+        <option value="">Choose place</option>
+        <option value="headoffice">Head Office</option>
+        <option value="branchoffice">Branch Office</option>
+        <option value="belfastbranch">Belfast Branch</option>
+    </select>
+
     <div id="map"></div>
 </section>
 
