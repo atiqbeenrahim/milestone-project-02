@@ -294,11 +294,11 @@ video {
 
 .gallery {
     min-height: 100vh;
-    background: #242582;
+    background: linear-gradient(to left, #242582, #f64c72) no-repeat;
 
 }
 .gallery h1 {
-    color: #f64c72;
+    color: #fff;
     font-size: 4rem;
     padding: 1rem;
     padding-top: 4rem;
@@ -317,8 +317,6 @@ video {
 
 .slider{
 	max-width: 1000px;
-    height: 660px;
-	border:10px solid  #f64c72;
 	margin:80px auto;
 	position: relative;
 	overflow: hidden;
@@ -328,7 +326,7 @@ video {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #242582;
+  background-color: #f64c72;
   border-radius: 50%;
   color:#ffffff;
   font-size: 20px;
@@ -341,7 +339,7 @@ video {
 }
 .slider .left-slide:hover,.slider .right-slide:hover{
  box-shadow: 0px 0px 10px black;
- background-color: #f64c72;
+ background-color: #242582;
 }
 
 .slider .left-slide{
@@ -707,9 +705,6 @@ textarea {
         padding: 0;
         border: none;
     }
-    .slider{
-    height: 500px;
-}
 }
 
 @media (max-width:768px) {
@@ -783,8 +778,6 @@ textarea {
         text-align: center;
         padding-bottom: 3rem;
     }
-    .slider{
-    height: 450px;
 }
 
 @media (max-width:500px) {
@@ -805,6 +798,4 @@ textarea {
     .contact .row .contact-form-container form input[type="submit"] {
         width: 100%;
     }
-    .slider{
-    height: 300px;
 }
