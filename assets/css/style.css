@@ -293,10 +293,9 @@ video {
 /* Gallery section */
 
 .gallery {
-    min-height: 100vh;
     background: linear-gradient(to left, #242582, #f64c72) no-repeat;
-
 }
+
 .gallery h1 {
     color: #fff;
     font-size: 4rem;
