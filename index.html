@@ -21,14 +21,15 @@
 
     <header>
 
-        <a data-scroll="home" href="#home" class="logo">Royal Touristz <span><i class="fas fa-plane-departure"></i></span></a>
+        <a data-scroll="home" href="#home" class="logo">Royal Touristz <span><i
+                    class="fas fa-plane-departure"></i></span></a>
 
         <nav class="navbar">
             <ul>
                 <li><a data-scroll="home" href="#home" class="active">home</a></li>
                 <li><a data-scroll="feature" href="#feature">feature</a></li>
-                <li><a data-scroll="about" href="#about">about</a></li>
                 <li><a data-scroll="gallery" href="#gallery">gallery</a></li>
+                <li><a data-scroll="about" href="#about">about</a></li>
                 <li><a data-scroll="review" href="#review">review</a></li>
                 <li><a data-scroll="contact" href="#contact">contact</a></li>
             </ul>
@@ -52,7 +53,7 @@
         </div>
 
         <div class="form-container">
-            <form action="">
+            <form>
 
                 <h3>search your destination</h3>
 
@@ -68,14 +69,14 @@
                 <span>leaving</span>
                 <input type="date">
 
-                <input type="submit" value="search">
+                <input type="submit" id="unirest" value="search">
 
             </form>
         </div>
 
     </section>
 
-    <!-- feature section starts  -->
+    <!-- feature section -->
 
     <section class="feature" id="feature">
         <h1 class="heading">featured locations</h1>
@@ -87,7 +88,8 @@
                 <img src="./assets/images/card-1.jpg" alt="">
                 <div class="content">
                     <h3 class="title">Thailand</h3>
-                    <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha.</p>
+                    <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces,
+                        ancient ruins and ornate temples displaying figures of Buddha.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -103,7 +105,9 @@
                 <img src="./assets/images/card-2.jpg" alt="">
                 <div class="content">
                     <h3 class="title">Ireland</h3>
-                    <p>Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles.</p>
+                    <p>Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the
+                        North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of
+                        the British Isles.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -120,7 +124,9 @@
                 <img src="./assets/images/card-3.jpg" alt="">
                 <div class="content">
                     <h3 class="title">Egypt</h3>
-                    <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's
+                    <p>Egypt, a country linking northeast Africa with the Middle East, dates to the time of the
+                        pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's
+                        colossal Pyramids and Great Sphinx as well as Luxor's
                         hieroglyph-lined Karnak Temple and Valley of the Kings tombs.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -137,9 +143,65 @@
 
     </section>
 
+    <!-- gallery section -->
 
-    <!-- about section starts  -->
+    <section id="gallery" class="gallery">
 
+        <h1>gallery</h1>
+
+        <div class="box-container">
+
+            <div class="slider">
+                <div class="slider-items">
+                    <div class="item active">
+                        <img src="assets/images/img1.jpg" />
+                        <div class="caption">
+                            Pattaya
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img2.jpg" />
+                        <div class="caption">
+                            Bali
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img3.jpg" />
+                        <div class="caption">
+                            Saint-Malo Beach
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img4.jpg" />
+                        <div class="caption">
+                            Venice
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img5.jpg" />
+                        <div class="caption">
+                            Trolltunga
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/img6.jpg" />
+                        <div class="caption">
+                            Relaxing place
+                        </div>
+                    </div>
+
+                </div>
+                <!-- slider controls -->
+                <div class="left-slide"><</div>
+                <div class="right-slide">></div>
+                <!-- slider controls -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- about section -->
 
     <section id="about" class="about">
         <h1 class="heading">about us</h1>
@@ -152,7 +214,8 @@
 
             <div class="content">
                 <h3>why us?</h3>
-                <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to enjoy the moments while managing foods and transport for you.</p><br>
+                <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to
+                    enjoy the moments while managing foods and transport for you.</p><br>
                 <p>We also arrange proper tour plan to make your life relaxing and adventurous.</p>
                 <a data-scroll="contact" href="#contact"><button class="btn">get started</button></a>
             </div>
@@ -161,75 +224,7 @@
 
     </section>
 
-
-    <!-- gallery section starts  -->
-
-    <section id="gallery" class="gallery">
-
-        <h1 class="heading"><span>g</span>allery</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="./assets/images/img1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/img2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/img3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/img4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/img5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="./assets/images/img6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- review section starts  -->
+    <!-- review section -->
 
     <section id="review" class="review">
 
@@ -261,7 +256,8 @@
                 </div>
                 <div class="content">
                     <h3>Arya</h3>
-                    <p>Best in the country for me. They made my life easy by giving all the necessary information and arrange every thing exactly how i want it. They care for their customers.</p>
+                    <p>Best in the country for me. They made my life easy by giving all the necessary information and
+                        arrange every thing exactly how i want it. They care for their customers.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -278,7 +274,8 @@
                 </div>
                 <div class="content">
                     <h3>Sany</h3>
-                    <p>I am very touched with their approach and how they handle everything related to your journey it's very professional.</p>
+                    <p>I am very touched with their approach and how they handle everything related to your journey it's
+                        very professional.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -293,7 +290,7 @@
 
     </section>
 
-    <!-- contact section starts  -->
+    <!-- contact section -->
 
     <section id="contact" class="contact">
 
@@ -308,7 +305,7 @@
                     <p>Tallaght, <br> Dublin 24, <br> Ireland.
                     </p>
                     <br>
-                    <h3> <i class="fas fa-home"></i> Branch Office 1</h3>
+                    <h3> <i class="fas fa-home"></i> Branch Office</h3>
                     <p>Temple Bar, <br> Dublin 1, <br> Ireland.
                     </p>
                     <br>
@@ -347,7 +344,7 @@
         </div>
 
         <select id="offices" onchange="moveMap()">
-            <option value="">Choose place</option>
+            <option value="">Choose Office</option>
             <option value="headoffice">Head Office</option>
             <option value="branchoffice">Branch Office</option>
             <option value="belfastbranch">Belfast Branch</option>
@@ -362,7 +359,8 @@
 
         <h1>sign up 30% discount</h1>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero quo nisi ratione. Ea, corporis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident saepe vel pariatur incidunt libero
+            quo nisi ratione. Ea, corporis.</p>
 
         <form action="">
             <input type="email" placeholder="enter your email">
@@ -390,19 +388,26 @@
 
     <!-- custom js file link  -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/email.js"></script>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/flight.js"></script>
 
     <!-- email js link-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             emailjs.init("user_IA2XdkOUTAvUydapRHYeI");
         })();
     </script>
 
     <!-- Google map link-->
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly" async></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD67Kjcn1tJX9z8XCxAbS-n6PpnqgDMyjk&callback=initMap&libraries=&v=weekly"
+        async></script>
+
 
 </body>
 
