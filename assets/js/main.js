@@ -1,4 +1,3 @@
-//Navbar toggle//
 $(document).ready(function () {
 
   $('.fa-bars').click(function () {

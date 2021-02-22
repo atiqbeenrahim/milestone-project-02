@@ -6,6 +6,12 @@ function initMap() {
 
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+    const locations = [
+      { lat: 53.28758963736527, lng: -6.365464299036272 },
+      { lat: 53.34503530812306, lng: -6.267437318146202 },
+      { lat: 54.59766859658021, lng: -5.930882680741953 },
+    ];
+
     const markers = locations.map((location, i) => {
       return new google.maps.Marker({
         position: location,
@@ -18,11 +24,6 @@ function initMap() {
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
   }
-  const locations = [
-    { lat: 53.28758963736527, lng: -6.365464299036272 },
-    { lat: 53.34503530812306, lng: -6.267437318146202 },
-    { lat: 54.59766859658021, lng: -5.930882680741953 },
-  ];
 
   function moveMap() {
     switch (document.getElementById("offices").value) {
@@ -33,7 +34,6 @@ function initMap() {
             lat: 53.28758963736527,
             lng: -6.365464299036272
           },
-
         });
         break;
       case "branchoffice":
@@ -56,6 +56,6 @@ function initMap() {
 
         });
         break;
-      default:
     };
+
   };
