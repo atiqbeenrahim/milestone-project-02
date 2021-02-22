@@ -28,7 +28,7 @@ function initMap() {
     switch (document.getElementById("offices").value) {
       case "headoffice":
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 12,
           center: {
             lat: 53.28758963736527,
             lng: -6.365464299036272
