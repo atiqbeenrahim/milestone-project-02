@@ -384,6 +384,7 @@ font-size: 30px;
 
 .about {
     min-height: 100vh;
+    padding-bottom: 3rem;
 }
 
 .about .row {
