@@ -500,6 +500,13 @@ font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem;
+    background: url(../images/contact.jpg), linear-gradient(to left, #242582, #f64c72) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    background-blend-mode: multiply;
 }
 
 .contact .row .contact-info .box {
@@ -508,11 +515,11 @@ font-size: 30px;
 
 .contact .row .contact-info .box h3 {
     font-size: 2rem;
-    color: #f64c72;
+    color: #fff;
 }
 
 .contact .row .contact-info .box h3 i {
-    color: #242582;
+    color: #fff;
 }
 
 .contact .row .contact-info .box p {
@@ -528,7 +535,7 @@ font-size: 30px;
 .contact .row .contact-form-container h3 {
     font-size: 4rem;
     padding-top: 4rem;
-    color: #242582;
+    color: #fff;
 }
 
 .contact .row .contact-form-container .inputBox {
@@ -580,11 +587,21 @@ textarea {
     width: 15rem;
 }
 
+.map {
+    padding: 2rem;
+    background: url(../images/contact.jpg), linear-gradient(to left, #242582, #f64c72) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    background-blend-mode: multiply;
+}
 #map {
     height: 200px;
     width: 100%;
     margin: 1rem 0;
 }
+
 
 
 /* Newsletter section */
