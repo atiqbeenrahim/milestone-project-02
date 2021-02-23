@@ -41,6 +41,7 @@
 
     <!-- home section starts  -->
 
+
     <section class="home" id="home">
 
         <video src="./assets/images/travel.mp4" loop muted autoplay></video>
@@ -53,24 +54,17 @@
         </div>
 
         <div class="form-container">
+            <h3>Search Your Destination</h3>
             <form onsubmit="onSubmit()">
-
-                <h3>search your destination</h3>
-
-                <span>location</span>
-                <input type="text" placeholder="place you want to visit">
-
-                <span>guest members</span>
-                <input type="number" placeholder="number of peoples">
-
-                <span>arrival</span>
-                <input type="date">
-
-                <span>leaving</span>
-                <input type="date">
-
-                <input type="submit" name="submit" value="search" target="_blank">
-
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter your destination" name="location" />
+                <label for="number">Number of Guest:</label>
+                <input type="number" id="number" placeholder="Enter number" name="number" />
+                <label for="date">From:</label>
+                <input type="date" id="date" placeholder="Enter Date" name="date" />
+                <label for="date">To:</label>
+                <input type="date" id="date" placeholder="Enter Date" name="date" />
+                <button type="submit">Submit</button>
             </form>
         </div>
 
@@ -188,11 +182,12 @@
 
                 </div>
                 <!-- slider controls -->
-                <div class="left-slide"><</div>
-                <div class="right-slide">></div>
-                <!-- slider controls -->
+                <div class="left-slide">
+                    << /div>
+                        <div class="right-slide">></div>
+                        <!-- slider controls -->
+                </div>
             </div>
-        </div>
 
     </section>
 
