@@ -92,33 +92,31 @@ The W3C Markup Validator, W3C CSS Validator and BeautifyTools JavaScript validat
 
     1. I want to easily understand the main purpose of the site and learn more about the developer.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero section with greetings and profession title Text and an image of the developer for promotion.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero section with greetings and travel qoutes with dialogues for promotion of the company.
         2. The main points are made immediately with the Hero section.
-        3. The user has two options, click the navigation buttons or scroll down, both of which will lead to the same place, to learn more about the developer.
+        3. The user has two options, click the navigation buttons or scroll down, both of which will lead to the same place, to learn more about the company and services.
 
     2. I want to be able to easily be able to navigate throughout the site to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the 2 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. On the both pages index and contact, navigation bar is sticky so it's always helpful to navigate around also user dosen't get lost in the pages.
+        2. On the page index, navigation bar is sticky so it's always helpful to navigate around also user dosen't get lost in the pages.
 
-    3. I want to look for the details of the developer to understand the skills and experience and see if he is trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About me and My CV, they will notice the Projects and Hire me section which will lead them to contact page.
+    3. I want to look for the details of the Offers, Gallery and Services and see if company is trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
+        1. Once the new visitor has read the About me, they will notice the Get started button to navigate to contact section which will lead them to contact page.
         2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
 
 -   #### Returning Visitor Goals
 
-    1. I want to find the new updates regarding his prjects and any new experience/skils.
+    1. I want to find the new updates regarding his offers, informations and any new pricings.
 
-        1. These are clearly shown in CV section and Project section.
+        1. These are clearly shown in feature section for offers, gallery for ideas and search flight section to see flight pricings.
         2. They will be directed to a page with navbar or can scroll down.
 
-    2. I want to find the best way to get in contact with the developer with any questions I may have.
+    2. I want to find the best way to get in contact with the company with any questions I may have.
 
         1. The navigation bar clearly shown the "Contact" Page.
-        2. Here they can fill out the form on the page and send request.
-        3. The footer contains links to the developer's Facebook, Twitter and Instagram page.
-        4. There is Download CV button on Navbar and in the footer to get the detailed printable version of CV in a pdf format. It will open up in a separate tab.
+        2. Here they can fill out the form on the page and send message.
+        3. The footer contains links to the company's Facebook, Twitter and Instagram page and it will ope up in separate tab.
 
 
 ### Further Testing
@@ -146,20 +144,18 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Code
 
--   [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [W3_Schools](https://www.w3schools.com/): Got different kinds of solutions from this website throughout the project mainly in CSS styling.
+-   [W3_Schools](https://www.w3schools.com/): Got different kinds of solutions from this website throughout the project mainly in HTML, CSS styling and JavaScript.
 
 
 ### Content
 
--   All content was written by the developer except about me text (some part) and my skills text (copied from Rosie Website of the course) .
+-   All content was written by the developer.
 
 -   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
 ### Media
 
--   All Images were created by the developer.
+-   All Images and Video taken from pixabay.com.
 
 ### Acknowledgements
 
