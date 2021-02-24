@@ -38,10 +38,7 @@ This is the Interactive Frontend Development project for Full Stack Software Dev
 
 *   ### Wireframes
 
-    -   Large screen Wireframe - [View](https://viewer.diagrams.net/?page-id=mENFt5hzagjeAIdPpgN2&highlight=0000ff&edit=_blank&layers=1&nav=1#Hatiqbeenrahim%2Fmilestone-project-02%2Fmaster%2Fassets%2Fimages%2Fmilestone%20project%2002.drawio)
-
-    -   Mobile Wireframe - [View](https://viewer.diagrams.net/?page-id=kRGXCZxGyBw7UFp8zMrI&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=kRGXCZxGyBw7UFp8zMrI#Hatiqbeenrahim%2Fmilestone-project-02%2Fmaster%2Fassets%2Fimages%2Fmilestone%20project%2002.drawio)
-
+    -   Large screen Wireframe & Mobile Wireframe- [View](shorturl.at/dhlET)
 
 ## Features
 
