@@ -5,7 +5,7 @@
 
 This is the Interactive Frontend Development project for Full Stack Software Developement course. I decided to make travel website because it has more scope to use JavaScript. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential visitors and customers.
 
-<h2 align="center"><img src="https://i.ibb.co/9s7HvHx/MP2.png"></h2>
+<h2 align="center"><img src="https://i.ibb.co/pw2zRGL/mp2.png"></h2>
 
 ## User Experience (UX)
 
