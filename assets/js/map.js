@@ -1,35 +1,28 @@
+var map;
 function initMap() {
-	const map = new google.maps.Map(document.getElementById("map"), {
-		zoom: 3,
+	map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 13,
 		center: {
-			lat: 54.07366927871658,
-			lng: -6.280508196282103
+			lat: 53.28758963736527,
+			lng: -6.365464299036272
 		},
 	});
+	marker = new google.maps.Marker({
+		map,
+		label: 'HO',
+		draggable: true,
+		animation: google.maps.Animation.DROP,
+		position: { lat: 53.28758963736527, lng: -6.365464299036272 },
+	  });
+	  marker.addListener("click", toggleBounce);
+	}
 
-	const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-	const locations = [{
-		lat: 53.28758963736527,
-		lng: -6.365464299036272
-	}, {
-		lat: 53.34503530812306,
-		lng: -6.267437318146202
-	}, {
-		lat: 54.59766859658021,
-		lng: -5.930882680741953
-	}, ];
-
-	const markers = locations.map((location, i) => {
-		return new google.maps.Marker({
-			position: location,
-			label: labels[i % labels.length],
-		});
-	});
-
-	new MarkerClusterer(map, markers, {
-		imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-	});
+	function toggleBounce() {
+	  if (marker.getAnimation() !== null) {
+		marker.setAnimation(null);
+	  } else {
+		marker.setAnimation(google.maps.Animation.BOUNCE);
+	  }
 }
 
 function moveMap() {
@@ -39,8 +32,16 @@ function moveMap() {
 				zoom: 12,
 				center: {
 					lat: 53.28758963736527,
-					lng: -6.365464299036272
+					lng: -6.365464299036272,
 				},
+			});
+			new google.maps.Marker({
+				position: {
+					lat: 53.28758963736527,
+					lng:-6.365464299036272, 'name': "Head Office"
+				},
+				 map,
+				label: 'HO',
 			});
 			break;
 		case "branchoffice":
@@ -50,7 +51,14 @@ function moveMap() {
 					lat: 53.34503530812306,
 					lng: -6.267437318146202
 				},
-
+			});
+			new google.maps.Marker({
+				position: {
+					lat: 53.34503530812306,
+					lng: -6.267437318146202
+				},
+				 map,
+				label: 'BRO',
 			});
 			break;
 		case "belfastbranch":
@@ -60,7 +68,14 @@ function moveMap() {
 					lat: 54.59766859658021,
 					lng: -5.930882680741953
 				},
-
+			});
+			new google.maps.Marker({
+				position: {
+					lat: 54.59766859658021,
+					lng: -5.930882680741953
+				},
+				 map,
+				label: 'BO',
 			});
 			break;
 	}
