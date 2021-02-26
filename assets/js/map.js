@@ -38,7 +38,7 @@ function moveMap() {
 			new google.maps.Marker({
 				position: {
 					lat: 53.28758963736527,
-					lng:-6.365464299036272, 'name': "Head Office"
+					lng:-6.365464299036272,
 				},
 				 map,
 				label: 'HO',
