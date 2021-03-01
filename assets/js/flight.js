@@ -7,7 +7,9 @@ function keyBy(list, keyName, valueName) {
 }
 async function onSubmit() {
 	var dest = document.getElementById("destination").value;
-    await fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/IE/EUR/en-IE/DUB-sky/${dest}-sky/anytime?inboundpartialdate=anytime`, {
+	var dep = document.getElementById("dep-date").value.split("-").reverse().join("-");
+	var rtn =  document.getElementById("rtn-date").value.split("-").reverse().join("-");
+    await fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/IE/EUR/en-IE/DUB-sky/${dest}-sky/${dep}?inboundpartialdate=${rtn}`, {
 		methor: 'GET',
 		headers: {
 			"x-rapidapi-key": "1fdda8b8d7msh0ff4bfb2ac7e81ep1bfce7jsnd180ee116950",
@@ -24,14 +26,14 @@ async function onSubmit() {
 		.then(data => {
 	    		const {Carriers, Quotes, Places} = data;
 	    		const carriersByIdMap = keyBy(Carriers, 'CarrierId', 'Name');
-			const placesByIdMap = keyBy(Places, 'PlaceId', 'Name');
+				const placesByIdMap = keyBy(Places, 'PlaceId', 'Name');
 	    		const topQuotes = Quotes.slice(0, 10);
-	    debugger;
-			const html = topQuotes.map(eachQuote => {
+				const html = topQuotes.map(eachQuote => {
 				return `
 				<div class="flight">
 				<p>From: ${placesByIdMap[eachQuote.OutboundLeg.OriginId]}</p>
 				<p>To: ${placesByIdMap[eachQuote.OutboundLeg.DestinationId]}</p>
+				<p>Flight Name: ${carriersByIdMap[eachQuote.OutboundLeg.CarrierIds[0]]}</p>
 				<p>Price: EUR ${eachQuote.MinPrice}</p>
 				<p>Is Direct: ${eachQuote.Direct}</p>
 				<p>Departure Date: ${eachQuote.OutboundLeg.DepartureDate}</p>
