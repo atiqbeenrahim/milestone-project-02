@@ -46,9 +46,9 @@
         <video src="./assets/images/travel.mp4" loop muted autoplay></video>
         <div class="overlay"></div>
 
-        <div class="form-container" method="get">
+        <div class="form-container">
             <h3>Search Your Destination</h3>
-            <form onsubmit="onSubmit()">
+            <form action="" onsubmit="onSubmit();">
                 <label for="destination">Destination:</label>
                 <input type="text" id="destination" placeholder="Enter your destination" name="destination" />
                 <label for="number">Guest:</label>
@@ -57,9 +57,13 @@
                 <input type="date" id="dep-date" placeholder="Enter Date" name="dep-date" />
                 <label for="rtn-date">Return Date:</label>
                 <input type="date" id="rtn-date" placeholder="Enter Date" name="rtn-date" />
-                <button type="submit">Search</button>
+                <button type="submit" value="submit">Search</button>
             </form>
         </div>
+        <table id="s-result"></table>
+
+        </div>
+        <div>
 
         <div class="content">
             <h2>Never Stop Exploring</h2>
