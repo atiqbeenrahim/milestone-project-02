@@ -27,7 +27,7 @@ async function onSubmit() {
 		})
 		.then(data => {
 				fResult = data;
-				loadData(data);
+				loadData();
 			})
 
 		.catch(error => {
@@ -35,9 +35,9 @@ async function onSubmit() {
 		});
 }
 
-function loadData(data){
+function loadData() {
 	window.location.href = "f-result.html";
-	const {Carriers, Quotes, Places} = data;
+	const {Carriers, Quotes, Places} = fResult;
 	const carriersByIdMap = keyBy(Carriers, 'CarrierId', 'Name');
 	const placesByIdMap = keyBy(Places, 'PlaceId', 'Name');
 	const topQuotes = Quotes.slice(0, 10);
