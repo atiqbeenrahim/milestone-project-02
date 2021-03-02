@@ -53,7 +53,5 @@ function loadData() {
 	</div>`
 })
 .join('');
-			document
-			.querySelector('#f-details')
-			.insertAdjacentHTML("afterbegin", html);
-		};
+			localStorage.setItem('html', html);
+		}
