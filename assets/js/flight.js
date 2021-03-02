@@ -1,3 +1,5 @@
+let fResult="";
+
 function keyBy(list, keyName, valueName) {
 	let mapByKey = {};
 	list.forEach(eachItem => {
@@ -7,8 +9,8 @@ function keyBy(list, keyName, valueName) {
 }
 async function onSubmit() {
 	var dest = document.getElementById("destination").value;
-	var dep = document.getElementById("dep-date").value.split("-").reverse().join("-");
-	var rtn =  document.getElementById("rtn-date").value.split("-").reverse().join("-");
+	var dep = document.getElementById("dep-date").value;
+	var rtn =  document.getElementById("rtn-date").value;
     await fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/IE/EUR/en-IE/DUB-sky/${dest}-sky/${dep}?inboundpartialdate=${rtn}`, {
 		methor: 'GET',
 		headers: {
@@ -24,27 +26,34 @@ async function onSubmit() {
 			return response.json();
 		})
 		.then(data => {
-	    		const {Carriers, Quotes, Places} = data;
-	    		const carriersByIdMap = keyBy(Carriers, 'CarrierId', 'Name');
-				const placesByIdMap = keyBy(Places, 'PlaceId', 'Name');
-	    		const topQuotes = Quotes.slice(0, 10);
-				const html = topQuotes.map(eachQuote => {
-				return `
-				<div class="flight">
-				<p>From: ${placesByIdMap[eachQuote.OutboundLeg.OriginId]}</p>
-				<p>To: ${placesByIdMap[eachQuote.OutboundLeg.DestinationId]}</p>
-				<p>Flight Name: ${carriersByIdMap[eachQuote.OutboundLeg.CarrierIds[0]]}</p>
-				<p>Price: EUR ${eachQuote.MinPrice}</p>
-				<p>Is Direct: ${eachQuote.Direct}</p>
-				<p>Departure Date: ${eachQuote.OutboundLeg.DepartureDate}</p>
-				</div>`
+				fResult = data;
+				loadData(data);
 			})
-			.join("");
-			document
-			.querySelector('#s-result')
-			.insertAdjacentHTML("afterbegin", html);
-		})
+
 		.catch(error => {
 			console.log(error);
 		});
 }
+
+function loadData(data){
+	window.location.href = "f-result.html";
+	const {Carriers, Quotes, Places} = data;
+	const carriersByIdMap = keyBy(Carriers, 'CarrierId', 'Name');
+	const placesByIdMap = keyBy(Places, 'PlaceId', 'Name');
+	const topQuotes = Quotes.slice(0, 10);
+	const html = topQuotes.map(eachQuote => {
+	return `
+	<div class="f-details">
+	<p>From: ${placesByIdMap[eachQuote.OutboundLeg.OriginId]}</p>
+	<p>To: ${placesByIdMap[eachQuote.OutboundLeg.DestinationId]}</p>
+	<p>Flight Name: ${carriersByIdMap[eachQuote.OutboundLeg.CarrierIds[0]]}</p>
+	<p>Price: EUR ${eachQuote.MinPrice}</p>
+	<p>Is Direct: ${eachQuote.Direct}</p>
+	<p>Departure Date: ${eachQuote.OutboundLeg.DepartureDate}</p>
+	</div>`
+})
+.join('');
+			document
+			.querySelector('#f-details')
+			.insertAdjacentHTML("afterbegin", html);
+		};
