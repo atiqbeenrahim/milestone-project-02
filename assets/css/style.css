@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Global properties */
 
 * {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ html {
     padding: 1rem;
     padding-top: 6rem;
     text-align: center;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
 }
 
 /* Navbar section */
@@ -37,10 +37,10 @@ header {
     top: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: .5rem;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
-    padding: .3rem 2rem;
-    transition: .2s linear;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 2rem;
+    transition: 0.2s linear;
     z-index: 1000;
 }
 
@@ -75,10 +75,11 @@ header .navbar ul li {
 header .navbar ul li a {
     font-size: 2rem;
     color: #fff;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
-header .navbar ul li .active, header .navbar ul li a:hover {
+header .navbar ul li .active,
+header .navbar ul li a:hover {
     color: #f64c72;
 }
 
@@ -127,21 +128,21 @@ video {
 .home .content h2 {
     font-size: 4vw;
     color: #fff;
-    text-shadow: 0 .3rem .5rem #000;
+    text-shadow: 0 0.3rem 0.5rem #000;
 }
 
 .home .content h3 {
     font-size: 3vw;
     color: #fff;
-    text-shadow: 0 .3rem .5rem #000;
+    text-shadow: 0 0.3rem 0.5rem #000;
 }
 
 .home .content p {
     font-size: 1.5vw;
     color: #eee;
-    text-shadow: 0 .3rem .5rem #000;
+    text-shadow: 0 0.3rem 0.5rem #000;
     padding-left: 2rem;
-    border-left: .3rem solid #ddd;
+    border-left: 0.3rem solid #ddd;
 }
 
 /* Flight search form style */
@@ -150,8 +151,9 @@ video {
     margin-top: 10rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9);
-    border-radius: .5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.9);
+    border-radius: 0.5rem;
+    padding: 4px;
 }
 
 .home .form-container h3 {
@@ -163,7 +165,7 @@ video {
 .home .form-container form label {
     color: #fff;
     font-size: 2rem;
-    margin: .5rem 0 0 2rem;
+    margin: 0.5rem 0 0 2rem;
     padding-right: 5px;
 }
 
@@ -172,8 +174,8 @@ video {
     outline: none;
     padding: 8px;
     color: #333;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3) inset;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
 }
 
@@ -182,8 +184,8 @@ video {
     outline: none;
     padding: 8px;
     color: #333;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3) inset;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
 }
 
@@ -194,18 +196,18 @@ video {
     background: #f64c72;
     cursor: pointer;
     font-size: 1.5rem;
-    transition: .2s linear;
+    transition: 0.2s linear;
     border: none;
     outline: none;
     color: #333;
-    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
-    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3) inset;
+    border-radius: 0.5rem;
 }
 
 .home .form-container form button:hover {
     color: #fff;
     background: #f64c72;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
 .fpage {
@@ -221,8 +223,8 @@ video {
 
 .f-details {
     margin: 2rem;
-	background-color: #242582;
-	color: #fff;
+    background-color: #242582;
+    color: #fff;
     font-size: 1.5rem;
     padding: 2rem 2rem;
 }
@@ -246,8 +248,8 @@ video {
     width: 30rem;
     margin: 2rem;
     background: #fff;
-    border-radius: .5rem;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
     position: relative;
 }
@@ -275,7 +277,7 @@ video {
 }
 
 .feature .card-container .content .stars i {
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
     font-size: 2rem;
     color: gold;
 }
@@ -285,18 +287,18 @@ video {
     margin-top: 1.4rem;
     height: 3.5rem;
     width: 12rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     outline: none;
     border: none;
     background: #f64c72;
     color: #fff;
     cursor: pointer;
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
 .feature .card-container .content .btn:hover {
     background: none;
-    border: .2rem solid #f64c72;
+    border: 0.2rem solid #f64c72;
     color: #242582;
 }
 
@@ -326,7 +328,7 @@ video {
     padding: 1rem;
     padding-top: 4rem;
     text-align: center;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
 }
 
 .gallery .box-container {
@@ -345,7 +347,8 @@ video {
     overflow: hidden;
 }
 
-.slider .left-slide, .slider .right-slide {
+.slider .left-slide,
+.slider .right-slide {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -360,7 +363,8 @@ video {
     line-height: 40px;
 }
 
-.slider .left-slide:hover, .slider .right-slide:hover {
+.slider .left-slide:hover,
+.slider .right-slide:hover {
     box-shadow: 0px 0px 10px black;
     background-color: #242582;
 }
@@ -382,14 +386,14 @@ video {
 @keyframes zoom {
     0% {
         transform: scale(2);
-        opacity: 0
+        opacity: 0;
     }
     50% {
         transform: scale(2);
     }
     100% {
         transform: scale(1);
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -404,7 +408,7 @@ video {
     height: 60px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     line-height: 60px;
     text-align: center;
     color: #ffffff;
@@ -449,7 +453,7 @@ video {
     outline: none;
     border: none;
     cursor: pointer;
-    transition: .2s linear;
+    transition: 0.2s linear;
     height: 4rem;
     width: 18rem;
     margin-top: 1rem;
@@ -461,7 +465,7 @@ video {
 .about .row .content .btn:hover {
     background: none;
     color: #242582;
-    border: .2rem solid #f64c72;
+    border: 0.2rem solid #f64c72;
     margin-right: 1rem;
 }
 
@@ -495,7 +499,7 @@ video {
     margin: 4rem 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    box-shadow: 0 .3rem .5rem #000;
+    box-shadow: 0 0.3rem 0.5rem #000;
     background: #fff;
 }
 
@@ -508,7 +512,7 @@ video {
     width: 10rem;
     border-radius: 50%;
     object-fit: cover;
-    border: .7rem solid #fff;
+    border: 0.7rem solid #fff;
 }
 
 .review .box-container .box .content h3 {
@@ -519,13 +523,13 @@ video {
 .review .box-container .box .content p {
     font-size: 1.4rem;
     color: #333;
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .review .box-container .box .content .stars i {
     color: gold;
     font-size: 1.7rem;
-    padding: 1rem .1rem;
+    padding: 1rem 0.1rem;
 }
 
 /* Contact section */
@@ -582,9 +586,10 @@ video {
     width: 49%;
 }
 
-.contact .row .contact-form-container form input, textarea {
+.contact .row .contact-form-container form input,
+textarea {
     outline: none;
-    border: .2rem solid #f64c72;
+    border: 0.2rem solid #f64c72;
     height: 4rem;
     background: #fff;
     padding: 0 1rem;
@@ -601,9 +606,9 @@ video {
 
 .contact .row .contact-form-container form input[type="submit"] {
     color: #242582;
-    border: .2rem solid #f64c72;
+    border: 0.2rem solid #f64c72;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
     width: 20rem;
 }
 
@@ -614,15 +619,14 @@ video {
 
 #offices {
     color: #f64c72;
-    border: .2rem solid #242582;
+    border: 0.2rem solid #242582;
     cursor: pointer;
     font-size: 1.8rem;
     width: 15rem;
 }
 
 .map {
-    padding: 2rem;
-    background: url(../images/contact.jpg), linear-gradient(to left, #242582, #f64c72) no-repeat;
+    background: #242582;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -631,9 +635,8 @@ video {
 }
 
 #map {
-    height: 200px;
+    height: 400px;
     width: 100%;
-    margin: 1rem 0;
 }
 
 /* Footer section */
@@ -657,15 +660,15 @@ video {
 
 .footer .icons a {
     font-size: 2rem;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     height: 4rem;
     width: 4rem;
     line-height: 3.5rem;
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    border: .2rem solid #fff;
-    transition: .2s linear;
+    border: 0.2rem solid #fff;
+    transition: 0.2s linear;
 }
 
 .footer .icons a:hover {
@@ -674,7 +677,7 @@ video {
 
 /* media queries  */
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .home {
         flex-flow: column;
         padding: 1.5rem;
@@ -702,7 +705,7 @@ video {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     html {
         font-size: 55%;
     }
@@ -716,11 +719,11 @@ video {
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        background-color: rgba(0, 0, 0, .8);
-        border-radius: .5rem;
-        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0.5rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
         z-index: 1000;
-        transition: .2s linear;
+        transition: 0.2s linear;
         opacity: 0;
     }
     header .navbar ul {
@@ -768,7 +771,7 @@ video {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
     .home .form-container {
         width: 100%;
     }
