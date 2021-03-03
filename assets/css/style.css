@@ -167,6 +167,16 @@ video {
     padding-right: 5px;
 }
 
+.home .form-container form .option {
+    border: none;
+    outline: none;
+    padding: 8px;
+    color: #333;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+
 .home .form-container form input {
     border: none;
     outline: none;
@@ -196,6 +206,25 @@ video {
     color: #fff;
     background: #f64c72;
     transition: .2s linear;
+}
+
+.fpage {
+    margin: 10rem;
+    justify-content: center;
+}
+
+.fpage h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f64c72;
+}
+
+.f-details {
+    margin: 2rem;
+	background-color: #242582;
+	color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem 2rem;
 }
 
 /* Feature section */
