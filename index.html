@@ -42,7 +42,7 @@
 
             <div class="form-container">
                 <h3>Search Your Destination</h3>
-                <form action="" onsubmit="onSubmit();return false">
+                <form onsubmit="onSubmit();return false">
                     <label for="destination">Destination:</label>
                     <select id="destination" class="option">
                         <option value="">Select</option>
@@ -103,9 +103,9 @@
                     <label for="number">Guest:</label>
                     <input type="number" id="number" placeholder="Enter number" name="number" />
                     <label for="dep-date">Departure Date:</label>
-                    <input type="date" id="dep-date" placeholder="Enter Date" name="dep-date" />
+                    <input type="date" id="dep-date" name="dep-date" />
                     <label for="rtn-date">Return Date:</label>
-                    <input type="date" id="rtn-date" placeholder="Enter Date" name="rtn-date" />
+                    <input type="date" id="rtn-date" name="rtn-date" />
                     <button type="submit" value="submit">Search</button>
                 </form>
             </div>
@@ -186,44 +186,44 @@
                 <div class="slider">
                     <div class="slider-items">
                         <div class="item active">
-                            <img src="assets/images/img1.jpg" />
+                            <img src="assets/images/img1.jpg" alt="" />
                             <div class="caption">
                                 Pattaya
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/images/img2.jpg" />
+                            <img src="assets/images/img2.jpg" alt="" />
                             <div class="caption">
                                 Bali
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/images/img3.jpg" />
+                            <img src="assets/images/img3.jpg" alt="" />
                             <div class="caption">
                                 Saint-Malo Beach
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/images/img4.jpg" />
+                            <img src="assets/images/img4.jpg" alt="" />
                             <div class="caption">
                                 Venice
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/images/img5.jpg" />
+                            <img src="assets/images/img5.jpg" alt="" />
                             <div class="caption">
                                 Trolltunga
                             </div>
                         </div>
                         <div class="item">
-                            <img src="assets/images/img6.jpg" />
+                            <img src="assets/images/img6.jpg" alt="" />
                             <div class="caption">
                                 Relaxing place
                             </div>
                         </div>
                     </div>
-                    <div class="left-slide"><</div>
-                    <div class="right-slide">></div>
+                    <div class="left-slide">&lt;</div>
+                    <div class="right-slide">&gt;</div>
                 </div>
             </div>
         </section>
@@ -243,7 +243,10 @@
                     <p>We provide best luxury service within your budget. We provide expert guide for advice and help you to enjoy the moments while managing foods and transport for you.</p>
                     <br />
                     <p>We also arrange proper tour plan to make your life relaxing and adventurous.</p>
-                    <a data-scroll="contact" href="#contact"><button class="btn">get started</button></a>
+                    <br />
+                    <br />
+                    <br />
+                    <a data-scroll="contact" href="#contact">get started</a>
                 </div>
             </div>
         </section>
@@ -365,7 +368,7 @@
             </div>
         </section>
 
-        <section class="map">
+        <div class="map">
             <select id="offices" onchange="moveMap()">
                 <option value="">Choose Office</option>
                 <option value="headoffice">Head Office</option>
@@ -374,7 +377,7 @@
             </select>
 
             <div id="map"></div>
-        </section>
+        </div>
 
         <section class="footer">
             <h1 class="credit">Copyright <span>Royal Touristz</span> | all rights reserved.</h1>
@@ -398,8 +401,8 @@
         <script src="./assets/js/flight.js"></script>
 
         <!-- email js link-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
             (function () {
                 emailjs.init("user_IA2XdkOUTAvUydapRHYeI");
             })();

@@ -57,7 +57,7 @@ This is the Interactive Frontend Development project for Full Stack Software Dev
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Roboto Slab & Baloo Tomma 2' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Playfair Display' font into the style.css file which is used on all pages throughout the project.
 1. [JQuery:](https://fontawesome.com/)
     - JQuery was used for interactive sections.
 1. [Google API:](https://developers.google.com/maps/documentation/javascript/get-api-key)

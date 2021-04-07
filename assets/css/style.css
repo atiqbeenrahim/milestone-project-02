@@ -282,26 +282,6 @@ video {
     color: gold;
 }
 
-.feature .card-container .content .btn {
-    font-size: 1.7rem;
-    margin-top: 1.4rem;
-    height: 3.5rem;
-    width: 12rem;
-    border-radius: 0.5rem;
-    outline: none;
-    border: none;
-    background: #f64c72;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
-
-.feature .card-container .content .btn:hover {
-    background: none;
-    border: 0.2rem solid #f64c72;
-    color: #242582;
-}
-
 .feature .card-container .card .discount {
     position: absolute;
     top: 1rem;
@@ -449,24 +429,19 @@ video {
     color: #333;
 }
 
-.about .row .content .btn {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s linear;
-    height: 4rem;
-    width: 18rem;
-    margin-top: 1rem;
-    color: #fff;
-    background: #f64c72;
-    font-size: 2rem;
-}
-
-.about .row .content .btn:hover {
-    background: none;
+.about .row a {
+    padding: 1.5rem;
+    font-size: 1.8rem;
     color: #242582;
     border: 0.2rem solid #f64c72;
-    margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 20rem;
+}
+
+.about .row a:hover {
+    color: #242582;
+    background: #f64c72;
 }
 
 /* Review section */
@@ -751,9 +726,6 @@ textarea {
     .about .row .content {
         text-align: center;
     }
-    .about .row .content .btn1 {
-        margin-right: 0;
-    }
     .contact .row {
         flex-flow: column;
         align-items: flex-start;
@@ -779,6 +751,10 @@ textarea {
         width: 100%;
         margin: 3rem 0;
     }
+    .about .row a {
+        width: 100%;
+    }
+
     .contact .row .contact-form-container form input {
         margin: 1rem 0;
         width: 100%;
